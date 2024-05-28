@@ -8,8 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f0f0;
+            background-color: #e0f7fa;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
         .header {
             background-color: #007bff;
@@ -19,6 +21,36 @@
         .content {
             padding: 20px;
         }
+        .contract {
+            background-color: white;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contract h2 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .capybara-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .background {
+            background-image: url('https://example.com/your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+        }
     </style>
 </head>
 <body>
@@ -26,9 +58,19 @@
         <h1>Welcome to CapyBase</h1>
         <p>The fun meme coin on the BASE chain!</p>
     </div>
-    <div class="content">
-        <p>If you love capybaras, join our community and support capybara conservation efforts.</p>
-        <p>Follow us on social media and stay tuned for our Uniswap listing and airdrop!</p>
+    <div class="background">
+        <div class="content">
+            <div class="contract">
+                <h2>CapyBase Contract</h2>
+                <p>0x9E2D8a3e1628751ae06d6A67F35387626d7c294e</p>
+            </div>
+            <img src="https://example.com/your-capybara-image.jpg" alt="Friendly Capybara" class="capybara-image">
+            <p>If you love capybaras, join our community and support capybara conservation efforts.</p>
+            <p>Follow us on social media and stay tuned for our Uniswap listing and airdrop!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 CapyBase. All rights reserved.</p>
     </div>
 </body>
 </html>
